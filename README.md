@@ -9,6 +9,7 @@ Two Repositories:
 A is a parent to B. The means that A is a project with submodule B. 
 `A<b1,h1>` denotes reponsitory `A` on branch `b1` with hash `h1`.  
   
+![](diagram.png)  
 # Things to test:
 
 - **TEST 1**: Given that `A<b1,h1>` is parent to `B<b2, h2>`, a change is made in `B` that brings the state of `B<b2, h2>` to `B<b2, h3>`. Assuming `A<b1, h1>` is unaltered, `A<b1, h1>`'s submodule init still only pulls `B<b2,h2>`, not the newer version `B<b2,h3>`.  
