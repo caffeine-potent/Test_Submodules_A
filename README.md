@@ -11,7 +11,7 @@ A is a parent to B. The means that A is a project with submodule B.
   
 # Things to test:
 
-- **TEST 1**: Given that `A<b1,h1>` is parent to `B<b2, h2>`, a change is made in `B` that brings the state of `B<b2, h2>` to `B<b2, h3>`. A `A<b1, h1>` unaltered, `A<b1, h1>`'s submodule init still only pulls `B<b2,h2>`, not the newer version `B<b2,h3>`.  
+- **TEST 1**: Given that `A<b1,h1>` is parent to `B<b2, h2>`, a change is made in `B` that brings the state of `B<b2, h2>` to `B<b2, h3>`. Assuming `A<b1, h1>` is unaltered, `A<b1, h1>`'s submodule init still only pulls `B<b2,h2>`, not the newer version `B<b2,h3>`.  
 - **TEST 2**: Initial configuration. `A<b1,h1>` is parent to `B<b2, h2>`.
 Changes: state of `B<b2, h2>` is brought to `B<b2,h3>`. This change is pushed. Changes tracked in `A` for submodule `B` is pushed changing `A<b1, h1>` to `A<b1, h4>`. This tests assumptions about how submodules are updated in a parent.  
 
