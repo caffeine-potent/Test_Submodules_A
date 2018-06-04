@@ -1,0 +1,3 @@
+[submodule "Test_Submodules_B"]
+	path = Test_Submodules_B
+	url = https://github.com/caffeine-potent/Test_Submodules_B
